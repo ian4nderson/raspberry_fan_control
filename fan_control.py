@@ -59,12 +59,10 @@ try:
 
         time.sleep(sleepVerifica)
             
-except KeyboardInterrupt:
-    log.info("Encerrando manualmente...")
-    GPIO.cleanup()    
-    exit()
-except:
-    log.error("Generic Exception")
+except Exception as e:
+    log.error("Exception: {}".format(e))
+finally:
+    log.info("Cleanup GPIO")
     GPIO.cleanup()
     exit()
     
