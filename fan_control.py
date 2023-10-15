@@ -11,10 +11,11 @@ numeroPino = 21
 sleepVerifica = 5
 tempMax = 45.0
 tempMin = 38.0
+logFileDir = "/tmp/"
 # Configuração do log:
 log.basicConfig(
     level=log.INFO,
-    filename="fan_control.log",
+    filename=logFileDir+"fan_control.log",
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
 ##############################
