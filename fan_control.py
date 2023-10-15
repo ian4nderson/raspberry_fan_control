@@ -1,5 +1,4 @@
 import RPi.GPIO as GPIO
-import sys
 import time
 import subprocess
 import logging as log
@@ -8,7 +7,7 @@ import logging as log
 # Variáveis e configurações
 ##############################
 # Configurações do pino, timeout e temperaturas:
-numeroPino = 21 #int(sys.argv[1])
+numeroPino = 21
 sleepVerifica = 5
 tempMax = 45.0
 tempMin = 38.0
