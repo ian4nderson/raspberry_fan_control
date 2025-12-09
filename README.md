@@ -1,4 +1,4 @@
-# raspberry_fan_control
+# Raspberry Fan Control
 
-Use BC549 transistor in negative wire of the fan.
-The base of transistor receive the signal of the gpio wire.
+Connect the BC549 transistor to the ground (negative) wire of the fan.
+The base of the transistor receives the signal from the GPIO pin.
